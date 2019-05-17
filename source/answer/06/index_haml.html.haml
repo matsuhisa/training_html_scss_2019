@@ -1,0 +1,494 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: 'viewport', content: 'width=1024' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag 'site'
+    %title 実習06のサンプル
+  %body
+
+    %header.site-header
+      .site-header-container
+        .site-header-site-logo
+          %img{ src: "./images/logo.png", alt: "みんなのウェディング", width: "150" }
+        .site-header-pleace-search
+          %span.material-icons search
+          %input{ type: "text", name: "q" , placeholder: "結婚式場を式場名・最寄駅から探す"}
+        .site-header-site-member
+          %a{href: "#"}
+            %span.material-icons face
+            ログイン
+          %span
+            |
+          %a{href: "#"}
+            新規会員登録
+
+    %ul.breadcrumb
+      %li
+        %a{href: "#"} みんなのウェディング
+      %li
+        %a{href: "#"} 結婚式場を探す
+      %li
+        東京の結婚式場
+
+    .content
+      %section.content__main
+        %h1 東京の結婚式場
+
+        %ul.place-search-orders
+          %li.place-search-orders__order.current
+            .material-icons filter_list
+            注目度順
+          %li.place-search-orders__order
+            口コミ評価順
+
+        .places
+          .place
+            .place-thumbnails
+              .place-thumbnails__main
+                %img{ src: "./images/place01.jpg", width: "235" }
+              .place-thumbnails__thumbnails
+                %span<>
+                  %img{ src: "./images/place01.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place02.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place03.jpg", width: "75" }<>
+                  .place-thumbnails__more
+                    %i.material-icons photo_library
+            .place-informaton
+              %h2
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+
+              .place-area
+                %span.material-icons.place-area__icon<> location_on
+                %span.place-area__name 文京・池袋・練馬・板橋エリア
+              .place-genre
+                %span.material-icons.place-genre__icon<> location_city
+                %span.place-genre__name ホテル
+
+              .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
+
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+              .place-review-informaton
+                .place-review-informaton__review
+                  %span.material-icons textsms
+                  口コミ 456 件
+                .place-review-informaton__cost
+                  %span.material-icons monetization_on
+                  平均費用 321 万円
+              .place-review
+                .place-review-title-container
+                  .place-review__type
+                    .m__on-the-day 本番
+                  .place-review-title
+                    .place-review-title__good-title
+                      %i.material-icons sentiment_satisfied
+                      緑に囲まれた挙式をしたい方にはピッタリ
+                    .place-review-title__warning-title
+                      %i.material-icons sentiment_dissatisfied
+                      人が多くて披露宴会場の外は落ち着かない
+                .place-review__body
+                  やはり老舗ホテル、料金はお高いです。 そのかわり、スタッフの対応は素晴らしいものがあります。私の担当のプランナーさんが若いためか...
+                .place-review-contributor
+                  .place-review-contributor__profile
+                    %img{class: "image-circle",src: "./images/cat1.jpg", width: "30px"}
+                    %div
+                      かもねぎ さん
+                      %br
+                      （女性 / 30代前半）
+                  .place-review-contributor__date
+                    %span.material-icons today
+                    挙式日 2018年3月
+
+          .place
+            .place-thumbnails
+              .place-thumbnails__main
+                %img{ src: "./images/place02.jpg", width: "235" }
+              .place-thumbnails__thumbnails
+              .place-thumbnails__thumbnails
+                %span<>
+                  %img{ src: "./images/place02.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place03.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place04.jpg", width: "75" }<>
+                  .place-thumbnails__more
+                    %i.material-icons photo_library
+            .place-informaton
+              %h2
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+
+              .place-area
+                %span.material-icons.place-area__icon<> location_on
+                %span.place-area__name 文京・池袋・練馬・板橋エリア
+              .place-genre
+                %span.material-icons.place-genre__icon<> location_city
+                %span.place-genre__name ホテル
+
+              .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
+
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+              .place-review-informaton
+                .place-review-informaton__review
+                  %span.material-icons textsms
+                  口コミ 456 件
+                .place-review-informaton__cost
+                  %span.material-icons monetization_on
+                  平均費用 321 万円
+              .place-review
+                .place-review-title-container
+                  .place-review__type
+                    .m__on-the-day 本番
+                  .place-review-title
+                    .place-review-title__good-title
+                      %i.material-icons sentiment_satisfied
+                      緑に囲まれた挙式をしたい方にはピッタリ
+                    .place-review-title__warning-title
+                      %i.material-icons sentiment_dissatisfied
+                      人が多くて披露宴会場の外は落ち着かない
+                .place-review__body
+                  やはり老舗ホテル、料金はお高いです。 そのかわり、スタッフの対応は素晴らしいものがあります。私の担当のプランナーさんが若いためか...
+                .place-review-contributor
+                  .place-review-contributor__profile
+                    %img{class: "image-circle",src: "./images/cat1.jpg", width: "30px"}
+                    %div
+                      かもねぎ さん
+                      %br
+                      （女性 / 30代前半）
+                  .place-review-contributor__date
+                    %span.material-icons today
+                    挙式日 2018年3月
+
+          .place
+            .place-thumbnails
+              .place-thumbnails__main
+                %img{ src: "./images/place03.jpg", width: "235" }
+              .place-thumbnails__thumbnails
+                %span<>
+                  %img{ src: "./images/place01.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place02.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place03.jpg", width: "75" }<>
+                  .place-thumbnails__more
+                    %i.material-icons photo_library
+            .place-informaton
+              %h2
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+
+              .place-area
+                %span.material-icons.place-area__icon<> location_on
+                %span.place-area__name 文京・池袋・練馬・板橋エリア
+              .place-genre
+                %span.material-icons.place-genre__icon<> location_city
+                %span.place-genre__name ホテル
+
+              .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
+
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+              .place-review-informaton
+                .place-review-informaton__review
+                  %span.material-icons textsms
+                  口コミ 456 件
+                .place-review-informaton__cost
+                  %span.material-icons monetization_on
+                  平均費用 321 万円
+              .place-review
+                .place-review-title-container
+                  .place-review__type
+                    .m__on-the-day 本番
+                  .place-review-title
+                    .place-review-title__good-title
+                      %i.material-icons sentiment_satisfied
+                      緑に囲まれた挙式をしたい方にはピッタリ
+                    .place-review-title__warning-title
+                      %i.material-icons sentiment_dissatisfied
+                      人が多くて披露宴会場の外は落ち着かない
+                .place-review__body
+                  やはり老舗ホテル、料金はお高いです。 そのかわり、スタッフの対応は素晴らしいものがあります。私の担当のプランナーさんが若いためか...
+                .place-review-contributor
+                  .place-review-contributor__profile
+                    %img{class: "image-circle",src: "./images/cat1.jpg", width: "30px"}
+                    %div
+                      かもねぎ さん
+                      %br
+                      （女性 / 30代前半）
+                  .place-review-contributor__date
+                    %span.material-icons today
+                    挙式日 2018年3月
+
+        .places-review-ranking
+          %h3 東京都の料理満足度ランキング
+          .places-review-ranking-places
+            .places-review-ranking-place
+              .places-review-ranking-place__rank
+                %span.m--1 1
+              %img{ src: "./images/place05.jpg", width: "115" }
+              %h3
+                %a.place-name{ href: "#" } Tower Tokyo
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.72
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank
+                %span.m--2 2
+              %img{ src: "./images/place04.jpg", width: "115" }
+              %h3
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.61
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank
+                %span.m--3 3
+              %img{ src: "./images/place01.jpg", width: "115" }
+              %h3
+                %a.place-name{ href: "#" } レストラン&ウェディング みんなのウェディングハウス ゴールデンハイム
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank.m--4 4
+              %img{ src: "./images/place02.jpg", width: "115" }
+              %h3
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank.m--5 5
+              %img{ src: "./images/place03.jpg", width: "115" }
+              %h3
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 3.91
+
+        .places
+          .place
+            .place-thumbnails
+              .place-thumbnails__main
+                %img{ src: "./images/place04.jpg", width: "235" }
+              .place-thumbnails__thumbnails
+                %span<>
+                  %img{ src: "./images/place04.jpg", width: "75" }<>
+                %span<>
+                  %img{ src: "./images/place05.jpg", width: "75" }<>
+            .place-informaton
+              %h2
+                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+
+              .place-area
+                %span.material-icons.place-area__icon<> location_on
+                %span.place-area__name 文京・池袋・練馬・板橋エリア
+              .place-genre
+                %span.material-icons.place-genre__icon<> location_city
+                %span.place-genre__name ホテル
+
+              .place-score
+                .place-score-stars
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star<> star
+                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__point 4.21
+
+              .place-review-informaton
+                .place-review-informaton__review
+                  %span.material-icons textsms
+                  口コミ 456 件
+                .place-review-informaton__cost
+                  %span.material-icons monetization_on
+                  平均費用 321 万円
+              .place-review
+                .place-review-title-container
+                  .place-review__type
+                    .m__on-the-day 本番
+                  .place-review-title
+                    .place-review-title__good-title
+                      %i.material-icons sentiment_satisfied
+                      緑に囲まれた挙式をしたい方にはピッタリ
+                    .place-review-title__warning-title
+                      %i.material-icons sentiment_dissatisfied
+                      人が多くて披露宴会場の外は落ち着かない
+                .place-review__body
+                  やはり老舗ホテル、料金はお高いです。 そのかわり、スタッフの対応は素晴らしいものがあります。私の担当のプランナーさんが若いためか...
+                .place-review-contributor
+                  .place-review-contributor__profile
+                    %img{class: "image-circle",src: "./images/cat1.jpg", width: "30px"}
+                    %div
+                      かもねぎ さん
+                      %br
+                      （女性 / 30代前半）
+                  .place-review-contributor__date
+                    %span.material-icons today
+                    挙式日 2018年3月
+
+        .pagination
+          .pagination-prev ＜
+          .pagination-pages
+            .pagination-pages__page 1
+            .pagination-pages__page.current 2
+            .pagination-pages__page 3
+            .pagination-pages__overflow ....
+          .pagination-next ＞
+
+      %aside.content__side
+
+        .place-search-menu
+          %h3
+            %span.material-icons<> location_on
+            エリア
+          %ul
+            %li.current
+              %span.label 東京全域
+              %span.icon-count 811
+            %li
+              %span.label 東京駅・皇居周辺
+              %span.icon-count 94
+            %li
+              %span.label 銀座・新橋
+              %span.icon-count 72
+            %li
+              %span.label 品川・目黒・世田谷
+              %span.icon-count 98
+            %li
+              %span.label お台場・竹芝・晴海
+              %span.icon-count 34
+            %li
+              %span.label 六本木・赤坂・麻布
+              %span.icon-count 91
+            %li
+              %span.label 表参道・青山・渋谷
+              %span.icon-count 134
+            %li
+              %span.label 恵比寿・代官山・白金
+              %span.icon-count 69
+            %li
+              %span.label 新宿・中野・杉並
+              %span.icon-count 58
+            %li
+              %span.label 文京・池袋・練馬・板橋
+              %span.icon-count 55
+            %li
+              %span.label 上野・浅草・墨田・江東
+              %span.icon-count 48
+            %li
+              %span.label 立川・府中・調布
+              %span.icon-count 38
+            %li
+              %span.label 町田・八王子
+              %span.icon-count 20
+            %li
+              %span.label 23区外
+              %span.icon-count 2
+
+        .place-search-menu
+          %h3
+            %span.material-icons<> location_city
+            会場ジャンル
+          %ul
+            %li 専門式場
+            %li ホテル
+            %li レストラン
+            %li ゲストハウス
+            %li 国内リゾート
+            %li 神社・仏閣
+            %li チャペル・教会
+            %li その他
+
+    %footer
+      .footer-services
+        .footer-services__service
+          %h4 結婚式を探す
+          %ul
+            %li 結婚式場を探す
+            %li 口コミランキングから
+            %li こだわりウェディング特集から
+            %li 海外（ハワイ）から
+            %li 相談デスク
+            %li ブライダルフェアから
+            %li プランから
+            %li 特典から
+
+        .footer-services__service
+          %h4 ウェディングアイテムを探す
+          %ul
+            %li ウェディングドレスを探す
+            %li 結婚・婚約指輪を探す
+            %li 前撮り・フォトウェディングを探す
+            %li 演出＆ウェディングアイテムを探す
+
+        .footer-services__service
+          %h4 結婚式について知る
+          %ul
+            %li みんなのウェディングニュース
+            %li 結婚準備マニュアル
+            %li 相談広場
+            %li 口コミを見る
+            %li 費用明細を見る
+
+      .footer-corporations
+        .footer-corporations__corporation
+          %h4 企業情報
+          %ul
+            %li 会社概要
+            %li プライバシーポリシー
+            %li 式場掲載・広告掲載のご案内

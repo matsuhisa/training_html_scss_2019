@@ -1,0 +1,86 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "description", content: "実習用のサンプルコードです" }
+    %meta{ name: "viewport", content: "width=1024" }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: "stylesheet"}
+    = stylesheet_link_tag "site"
+    %title 実習02のサンプル
+  %body
+
+    %h1 実習02
+
+    %p いくつかのパーツを作ります。
+
+    %ul
+      %li タイトル
+      %li テキスト
+      %li アイコン（ WebFont ）
+      %li バッジ
+      %li 丸
+      %li カード
+      %li ボタン
+      %li 画像（円形）
+      %li 画像（角丸）
+      %li 吹き出し１
+      %li 吹き出し２
+      %li リボン
+
+    %h2 タイトル
+    .place-name 国際みんなのウェディングホテル
+    %a.place-name{href: "#"} 国際みんなのウェディングホテル
+
+    %h2 テキスト
+    .lead-text
+      あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+      またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。では、わたくしはいつかの小さなみだしをつけながら、しずかにあの年のイーハトーヴォの五月から十月までを書きつけましょう。
+
+    %h2 アイコン（ WebFont ）
+    %p https://material.io/icons/ を利用します
+    .material-icons check_circle
+    .material-icons location_on
+    .material-icons photo_camera
+    .material-icons today
+    .material-icons access_time
+    .material-icons star
+    .material-icons star_half
+
+    %h2 バッジ
+    .badge 広告
+    .badge.must 必須
+
+    %h2 リボン
+    %div{ style: "background-color: #e7e7e7; padding: 20px;" }
+      .ribbon 料理が美味しい
+
+    %h2 丸
+    .circle-icon 99
+    .circle-icon 1
+    .circle-shadow +
+
+    %h2 フォーム
+
+    %input{ name: "q", type:"text", placeholder: "式場名・最寄駅で結婚式場を検索" }
+    %button{ type: "submit", class: "search-button" }
+      %span.material-icons search
+      %span 検索
+
+    %h2 カード
+    .card
+
+    %h2 画像（角丸）
+    %img{class: "image-radius", src: "https://c1.staticflickr.com/5/4561/24669101138_9b3ef37626_m.jpg"}
+
+    %h2 画像（円形）
+    %img{class: "image-circle",src: "./cat1.jpg"}
+
+    %h2 ボタン
+    %div
+      .button 口コミを投稿する
+    %div
+      .button.review 口コミを投稿する
+    %div
+      .button.size-L 口コミを投稿する
+    %div
+      .button.review.size-L 口コミを投稿する

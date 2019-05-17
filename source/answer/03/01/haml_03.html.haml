@@ -1,0 +1,36 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "description", content: "実習用のサンプルコードです" }
+    %meta{ name: "viewport", content: "width=1024" }
+    = stylesheet_link_tag "03"
+    %title 実習03のサンプル
+  %body
+    %h1 float
+
+    %ul
+      %li 段組を実装する方法の1つです。古くからある方法ですが、カラム落ちしやすい
+      %li clearfix という方法で、段組を制御します
+      %li 「box-sizing」と組み合わせることも出来ます
+
+    %h2 floatの例1
+
+    .cleafix
+      .main1 メイン1です
+      .menu1 メニュー1です
+
+    %h2 floatの例2
+
+    .cleafix
+      .main2 メイン2です
+      .menu2 メニュー2です
+
+    %h2 floatの例3
+
+    .cleafix
+      .main1
+        メイン1です
+        %br
+        メイン1です
+      .menu1 メニュー1です

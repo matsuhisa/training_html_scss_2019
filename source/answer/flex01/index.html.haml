@@ -1,0 +1,72 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
+    = stylesheet_link_tag 'site'
+    %title flex サンプル
+  %body
+
+  %p{ style: "font-size: 16px; background-color: #58d7bf;" }
+    文章中に
+    %span.flex-inline
+      %span.flex-inline__text テキストと
+      %span.flex-inline__image
+        %img{ src: "./logo.png", width: "40"}
+    が出てきます
+
+  %hr
+
+  %h2 2段組
+
+  .flex-2-1
+    .flex-2-1__item.flex-2-1__item_main
+      あいうえお
+    .flex-2-1__item.flex-2-1__item_side
+      あいうえお
+      あいうえお
+      あいうえお
+
+  %hr
+
+  %h2 2段組 / 一部固定
+
+  .flex-2-2
+    .flex-2-2__item.flex-2-2__item_main
+      あいうえお
+    .flex-2-2__item.flex-2-2__item_side
+      あいうえお
+      あいうえお
+      あいうえお
+  %hr
+
+  %h2 2段組 / 段組
+
+  .flex-2-3
+    .flex-2-3__item
+      あいうえお
+    .flex-2-3__item
+      あいうえお
+      あいうえお
+      あいうえお
+    .flex-2-3__item
+      あいうえお
+      あいうえお
+      あいうえお
+    .flex-2-3__item
+      あいうえお
+    .flex-2-3__item
+      あいうえお
+
+  %hr
+
+  %h2 3段組
+
+  .flex-3
+    .flex-3__item
+      あ
+    .flex-3__item
+      あいうえおあいうえお
+    .flex-3__item
+      あいうえおあいうえおあいうえお

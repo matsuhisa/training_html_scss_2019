@@ -1,0 +1,150 @@
+.places {
+  border: 1px solid #c6ae7d;
+  border-radius: 8px;
+  width: 660px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px #e2d6bd;
+}
+
+.place {
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.place h2 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.places .place {
+  border-bottom: 1px solid #c6ae7d;
+}
+
+.places .place:first-child {
+  border-radius: 8px 8px 0 0;
+  background-color: #fff2e6;
+}
+
+.places .place:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.place .place-thumbnail {
+  flex: 1;
+  max-width: 125px;
+}
+
+.place .place-informaton {
+  flex: 2;
+  padding-right: 10px;
+}
+
+.place .place-name {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.place .place-area {
+  font-size: 12px;
+  color: #536a80;
+  margin-bottom: 10px;
+}
+
+.place .place-area__icon {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.place .place-area__name {
+  vertical-align: middle;
+}
+
+.place .place-lead {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #536a80;
+  margin-bottom: 10px;
+}
+
+.ribbon {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+  background-color: #2fc3a7;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.ribbon::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: -10px;
+
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+  border-top-color: #2fc3a7;
+  border-bottom-color: #2fc3a7;
+}
+
+.place .ribbon {
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.ribbon.m--rank1 {
+  background-color: #ff9933;
+}
+
+.ribbon.m--rank1:after {
+  border-color: #ff9933;
+  border-right-color: #fff2e6;
+}
+
+/*
+
+下記は「部品を作る」で定義したclassです
+
+*/
+
+.place-name {
+  color: #2fc3a7;
+  font-weight: bold;
+}
+
+.place-lead {
+  color: #3b4b5b;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #b0becc;
+  border-radius: 8px;
+  color: #dee4ea;
+  font-weight: bold;
+  background-color: #f7f8fa;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.button.review {
+  border: 1px solid #ffb2c5;
+  color: #ffffff;
+  background-color: #ff658b;
+}
+
+.button.size-L {
+  width: 200px;
+}

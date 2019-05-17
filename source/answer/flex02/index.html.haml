@@ -1,0 +1,162 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
+    = stylesheet_link_tag 'site'
+    %title flex サンプル
+  %body
+
+%navi.global-navigation
+  .global-navigation-logo
+    %a{ href: "#" }
+      %img{ src: "./logo.png" }
+  .global-navigation-links
+    %a.global-navigation-links__item{ href: "#" } ログイン
+    %a.global-navigation-links__item{ href: "#" } 会員登録
+    %a.global-navigation-links__item{ href: "#" } xxx について
+
+.arrow
+
+%hr
+
+.articles
+  .article
+    .article__body
+      「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+    .article__image
+      %img{ src: "./images/article-image.jpg" }
+
+  .article
+    .article__body
+      「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+    .article__image
+      %img{ src: "./images/article-image.jpg" }
+
+  .article
+    .article__body
+      「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+    .article__image
+      %img{ src: "./images/article-image.jpg" }
+
+
+.topic-articles
+  .topic-article
+    .topic-article-image
+      %img{ src: "./images/article-image.jpg" }
+    .topic-article-info
+      %h2.topic-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+      .topic-article__body
+        「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+      .topic-article-user
+        .topic-article-user-thumbnail
+          %img.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+
+  .topic-article
+    .topic-article-image
+      %img{ src: "./images/article-image.jpg" }
+    .topic-article-info
+      %h2.topic-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+      .topic-article__body
+        「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+      .topic-article-user
+        %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+
+  .topic-article
+    .topic-article-image
+      %img{ src: "./images/article-image.jpg" }
+    .topic-article-info
+      %h2.topic-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+      .topic-article__body
+        「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+      .topic-article-user
+        %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+
+
+  .list-article
+    .list-article-item
+      .article
+        .article__body
+          「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+        .article__image
+          %img{ src: "./images/article-image.jpg" }
+    %a.list-article-item{ href: "#" }
+      .article
+        .article__body
+          「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+          「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+        .article__image
+          %img{ src: "./images/article-image.jpg" }
+    .list-article-item
+      %div
+    .list-article-item
+      .topic-article
+        .topic-article-image
+          %img{ src: "./images/article-image.jpg" }
+        .topic-article-info
+          %h2.topic-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+          .topic-article__body
+            「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。オリジナリティあふれる結婚式を、どうやって作ったか詳しくわかるのも、この連載ならでは！今回ご紹介するのは…
+          .topic-article-user
+            %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+            .topic-article-user-profile
+              .topic-article-user-profile__nickname ニックネーム さん
+              .topic-article-user-profile__postdate 2018年00月00日
+
+.card-articles
+  .card-article
+    .card-article__image
+      %img{ src: "./images/article-image.jpg" }
+    %h2.card-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+    .card-article__body 「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。
+    -# %a.card-article__user{ href: "#" } もっと読む
+    .card-article__user
+      .topic-article-user
+        %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+  .card-article
+    .card-article__image
+      %img{ src: "./images/article-image.jpg" }
+    %h2.card-article__title 司会進行は自分たちで！
+    .card-article__body 「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。
+    .card-article__user
+      .topic-article-user
+        %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+  .card-article
+    .card-article__image
+      %img{ src: "./images/article-image.jpg" }
+    %h2.card-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+    .card-article__body 「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。
+    .card-article__user
+      .topic-article-user
+        %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+        .topic-article-user-profile
+          .topic-article-user-profile__nickname ニックネーム さん
+          .topic-article-user-profile__postdate 2018年00月00日
+
+.card-article
+  .card-article__image
+    %img{ src: "./images/article-image.jpg" }
+  %h2.card-article__title 司会進行は自分たちで！元ウェディングプランナーが考えた新しい結婚式のカタチ
+  .card-article__body 「結婚式当日がよくわかる！」とプレ花嫁さんから人気の「結婚式レポ」。
+  .card-article__user
+    .topic-article-user
+      %img.topic-article-user-thumbnail.circle{ src: "./images/cat1.jpg" }
+      .topic-article-user-profile
+        .topic-article-user-profile__nickname ニックネーム さん
+        .topic-article-user-profile__postdate 2018年00月00日

@@ -1,0 +1,25 @@
+.box1 {
+  display: block;
+  border: 10px solid #cab68c;
+  background-color: #f9f7f2;
+  width: 200px;
+  height: 200px;
+
+  margin: 10px;
+}
+
+.box2 {
+  display: block;
+  border: 10px solid #cab68c;
+  background-color: #f9f7f2;
+  width: 200px;
+  height: 200px;
+
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.parent-box {
+  background-color: #dee4ea;
+  padding: 10px;
+}

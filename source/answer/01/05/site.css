@@ -1,0 +1,48 @@
+/* id指定 */
+#training {
+  color: #baa06c;
+}
+
+/* HTMLの要素を指定する */
+header {
+  border-bottom: 1px solid #baa06c;
+}
+
+/* クラス指定 */
+.title {
+  font-size: 16px;
+  color: #2fc3a7;
+}
+
+/* 子要素 */
+.title span{
+  display: block;
+  font-size: 12px;
+  color: #b0becc;
+  text-align: right;
+}
+
+/* 疑似要素：Pseudo-elements */
+header:hover{
+  color: #ffffff;
+  background-color: #baa06c;
+}
+
+li {
+  color: #3b4b5b;
+}
+
+/* 偶数の時 */
+li:nth-child(even) {
+  color: red;
+}
+
+/* 最初 */
+li:first-child{
+  color: #2fc3a7;
+}
+
+/* 最後 */
+li:last-child{
+  color: #baa06c;
+}

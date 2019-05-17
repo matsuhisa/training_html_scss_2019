@@ -1,0 +1,30 @@
+$white: #ffffff !default;
+
+$green: #2fc3a7 !default;
+$green_1S: lighten($green, 12%) !default;
+$green_2S: lighten($green, 24%) !default;
+$green_3S: lighten($green, 33%) !default;
+$green_4S: lighten($green, 42%) !default;
+$green_5S: lighten($green, 50%) !default;
+
+$gold: #ac8c4b !default;
+$gold_1S: lighten($gold, 15%) !default;
+$gold_2S: lighten($gold, 24%) !default;
+$gold_3S: lighten($gold, 33%) !default;
+$gold_4S: lighten($gold, 42%) !default;
+$gold_5S: lighten($gold, 48%) !default;
+
+$navy: #3b4b5b !default;
+$navy_1S: lighten($navy, 12%) !default;
+$navy_2S: lighten($navy, 30%) !default;
+$navy_3S: lighten($navy, 45%) !default;
+$navy_4S: lighten($navy, 60%) !default;
+$navy_5S: lighten($navy, 66%) !default;
+
+$orange: #ff9933 !default;
+$orange_1S: lighten($orange, 20%) !default;
+$orange_2S: lighten($orange, 35%) !default;
+
+$place-name-color: $green;
+$area-name-coor: $navy_1S;
+$riboon-color: #2fc3a7 !default;

@@ -1,0 +1,25 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "description", content: "実習用のサンプルコードです" }
+    %meta{ name: "viewport", content: "width=1024" }
+    = stylesheet_link_tag "04"
+    %title 実習03のサンプル
+  %body
+    %h1 flex のサンプルです
+
+    %ol
+      %li display:flex を用意する
+      %li dipslay:flex は、flex item を入れるコンテナ
+      %li flex item の高さが揃う
+      %li 並べ方にはいくつか種類がある。ここでは1つだけ紹介
+
+    .flex-container
+      .flex-item アイテム1
+      .flex-item アイテム2アイテム2
+      .flex-item
+        アイテム3
+        %br
+        アイテム3
+      .flex-item アイテム4

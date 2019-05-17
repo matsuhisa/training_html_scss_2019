@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+img.circle {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@mixin arrow($size: 6px, $color: #2fc3a7, $border-width: 2px, $rotate: 45deg) {
+  width: $size;
+  height: $size;
+  display:block;
+  min-height: 0%;
+  margin-top: - $size / 2;
+  border-top: solid 2px $color;
+  border-right: solid 2px $color;
+  // -webkit-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+
+// -------------
+
+.arrow {
+  @include arrow($size: 12px);
+}
+
+.list-article {
+}
+
+.list-article-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f9f7f2;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e2d6bd;
+
+  &:first-child {
+    border-top: 1px solid #e2d6bd;
+  }
+
+  &>div {
+    flex-basis: calc(100% - (12px + 10px));
+  }
+
+  &:after {
+    content: "";
+    @include arrow($size: 12px);
+  }
+}
+
+// -------------
+
+.card-articles {
+  display: flex;
+  margin-left: -10px;
+
+  &>.card-article {
+    width: calc( 100% / 3 );
+    margin-left: 10px;
+    &:nth-child(even) {
+      background-color: #f9f7f2;
+    }
+  }
+}
+
+.card-article {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  &__image {
+    margin-bottom: 10px;
+    min-height: 0%;  // IE 11 の対応
+    img {
+      width: 100%;
+    }
+  }
+  &__body {
+    margin-bottom: 10px;
+  }
+  &__user {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+
+// -------------
+
+.global-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-navigation-logo {
+}
+
+.global-navigation-links {
+  &__item {
+    margin-left: 10px;
+  }
+}
+
+// -------------
+.articles {
+  margin-bottom: 40px;
+  &>.article {
+    margin-bottom: 20px;
+  }
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &__body {
+    width: calc(100% - (100px + 10px));
+    // flex: 0 2 calc(100% - (100px + 10px));
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__image {
+    img {
+      width: 100px;
+    }
+  }
+}
+
+// -------------
+
+.topic-articles {
+  margin-bottom: 40px;
+  &>.topic-article {
+    margin-bottom: 20px;
+  }
+}
+
+.topic-article {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: 14px;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  &__body {
+    color: #666;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
+
+.topic-article-image {
+  img {
+    width: 100px;
+  }
+}
+
+.topic-article-info {
+  width: calc(100% - (100px + 10px));
+  // flex: 0 2 calc(100% - (100px + 10px));
+}
+
+.topic-article-user {
+  display: flex;
+  align-items: center;
+}
+
+.topic-article-user-thumbnail {
+  margin-right: 10px;
+}
+
+.topic-article-user-profile {
+  display: flex;
+  flex-direction: column;
+
+  &__nickname {
+    color: #ac8c4b;
+  }
+  &__postdate {
+    color: #b0becc;
+    font-size: 12px;
+  }
+}

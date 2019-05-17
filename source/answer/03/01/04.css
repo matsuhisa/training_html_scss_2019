@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  border: 1px solid #cab68c;
+  background-color: #f9f7f2;
+  flex: 1;
+}
+
+.flex-item:last-child {
+  flex: 2;
+}

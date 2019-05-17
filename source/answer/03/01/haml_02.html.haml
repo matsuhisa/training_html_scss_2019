@@ -1,0 +1,23 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "description", content: "実習用のサンプルコードです" }
+    %meta{ name: "viewport", content: "width=1024" }
+    = stylesheet_link_tag "02"
+    %title 実習03のサンプル
+  %body
+    %h1 margin と padding
+
+    %ul
+      %li コンテンツボックスの概念
+      %li width と border の関係
+      %li 「box-sizing」を利用するとコンテンツボックスについても変更できる
+
+    %h2 margin
+    .box1 これは .box1 です
+    .box2 これは .box2 です
+
+    %h2 padding
+    .parent-box
+      .box2 これは .box2 です

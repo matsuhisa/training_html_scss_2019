@@ -1,0 +1,27 @@
+@mixin ribbon($riboon-color: $riboon-color, $color: $white ) {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: 12px;
+  background-color: $riboon-color;
+  color: $color;
+  box-sizing: border-box;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -10px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-top-color: $riboon-color;
+    border-bottom-color: $riboon-color;
+  }
+}

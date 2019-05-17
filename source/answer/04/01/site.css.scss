@@ -1,0 +1,61 @@
+$white: #ffffff;
+$navy: #3b4b5b;
+$green: #2fc3a7;
+$green-lighten: lighten($green, 12%);
+
+$place-name-color: $green-lighten;
+
+$base-background-color: $navy;
+
+$border-base-color: $green;
+$boder-base-size: 1px;
+$boder-base: $boder-base-size solid $border-base-color;
+
+h1 {
+  color: $green;
+}
+
+.places {
+  color: $place-name-color;
+
+  &__user-name {
+    border: $boder-base;
+
+    &::after {
+      content: '様';
+    }
+
+    &.m--current {
+      color: $navy;
+    }
+  }
+}
+
+%badge {
+  background-color: $base-background-color;
+  border: $boder-base;
+  color: $white;
+}
+
+.badge {
+  @extend %badge;
+}
+
+.badge-ad {
+  @extend %badge;
+  color: $navy;
+}
+
+@mixin ribbon($color:$white) {
+  background-color: $base-background-color;
+  border: $boder-base;
+  color: $color;
+}
+
+.ribbon {
+  @include ribbon;
+}
+
+.ribbon-ad {
+  @include ribbon($navy);
+}

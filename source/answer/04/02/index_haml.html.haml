@@ -1,0 +1,64 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: 'viewport', content: 'width=1024' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag '02'
+    %title 実習04のサンプル
+  %body
+
+  .ribbon SCSS にしてみる
+  %ul
+    %li 同じHTMLに対してSCSSを利用して書き直す
+    %li クラス名やセレクターを注意する
+    %li mixinを利用すると同じ形でも、色違いとか作れる
+
+  .places
+    .place
+      .place-informaton
+        .ribbon.m--rank1 みんなに選ばれた式場
+        %h2
+          %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+        .place-area
+          %span.material-icons.place-area__icon<> location_on
+          %span.place-area__name 文京・池袋・練馬・板橋エリア
+        .place-lead
+          都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
+      .place-thumbnail
+        %img{ src: "https://d4w9i1j5cm7ll.cloudfront.net/rc/P001/300x300cq60/plan/7/366/rtuvvf7jpcmb52100g8kqdmrd631000.jpg", width: "125" }
+
+    .place
+      .place-informaton
+        .ribbon 料理が美味しい！
+        %h2
+          %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+        .place-area
+          %span.material-icons.place-area__icon<> location_on
+          %span.place-area__name 文京・池袋・練馬・板橋エリア
+        .place-lead
+          都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
+      .place-thumbnail
+        %img{ src: "https://d4w9i1j5cm7ll.cloudfront.net/rc/P001/300x300cq60/plan/7/366/rtuvvf7jpcmb52100g8kqdmrd631000.jpg", width: "125" }
+
+    .place
+      .place-informaton
+        %h2
+          %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+        .place-area
+          %span.material-icons.place-area__icon<> location_on
+          %span.place-area__name 文京・池袋・練馬・板橋エリア
+        .place-lead
+      .place-thumbnail
+        %img{ src: "https://d4w9i1j5cm7ll.cloudfront.net/rc/P001/300x300cq60/plan/7/366/rtuvvf7jpcmb52100g8kqdmrd631000.jpg", width: "125" }
+
+    .place
+      .place-informaton
+        %h2
+          %a.place-name{ href: "#" } 国際みんなのウェディングホテル
+        .place-area
+          %span.material-icons.place-area__icon<> location_on
+          %span.place-area__name 文京・池袋・練馬・板橋エリア
+        .place-lead
+          都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。

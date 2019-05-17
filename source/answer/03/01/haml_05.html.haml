@@ -1,0 +1,25 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "description", content: "実習用のサンプルコードです" }
+    %meta{ name: "viewport", content: "width=1024" }
+    = stylesheet_link_tag "05"
+    %title 実習03のサンプル
+  %body
+    %h1 table のサンプルです
+
+    %ol
+      %li display:table を用意する
+      %li dipslay:table は、tableの宣言
+      %li 高さは、高さが一番あるセルに揃う
+      %li カラム落ちしない
+
+    .table
+      .table-cell アイテム1
+      .table-cell アイテム2アイテム2
+      .table-cell
+        アイテム3
+        %br
+        アイテム3
+      .table-cell アイテム4

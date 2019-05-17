@@ -1,0 +1,9 @@
+.table {
+  display: table;
+}
+
+.table-cell {
+  border: 1px solid #cab68c;
+  background-color: #f9f7f2;
+  display: table-cell;
+}

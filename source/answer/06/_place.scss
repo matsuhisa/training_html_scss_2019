@@ -1,0 +1,67 @@
+.place-name {
+  color: $place-name-color;
+  font-weight: bold;
+}
+
+@mixin place-score($base-font: 16px) {
+  display: table;
+  font-size: $base-font;
+
+  &__point {
+    color: $pink;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &-stars {
+    display: table-cell;
+    vertical-align: middle;
+
+    &__star {
+      color: $pink;
+      display: inline-block;
+      font-size: $base-font + 2;
+    }
+
+    &__star-half {
+      color: $navy_2S;
+      display: inline-block;
+      font-size: $base-font + 2;
+    }
+  }
+}
+
+.place-score {
+  @include place-score;
+}
+
+.place-area {
+  color: $area-name-color;
+
+  &__icon {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  &__name {
+    vertical-align: middle;
+  }
+}
+
+.place-genre {
+  color: $genre-name-color;
+
+  &__icon {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  &__name {
+    vertical-align: middle;
+  }
+}
+
+.place-lead {
+  color: $navy_1S;
+  line-height: 1.4;
+}
