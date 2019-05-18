@@ -18,14 +18,14 @@ h1 {
 .places {
   color: $place-name-color;
 
-  &__user-name {
+  .places__user-name {
     border: $boder-base;
 
     &::after {
       content: '様';
     }
 
-    &.m--current {
+    &.-current {
       color: $navy;
     }
   }
