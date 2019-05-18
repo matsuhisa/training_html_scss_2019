@@ -1,0 +1,22 @@
+.places {
+  border: 1px solid #c6ae7d;
+  border-radius: 8px;
+  width: 660px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px #e2d6bd;
+
+  .place {
+    padding: 10px;
+    border-bottom: 1px solid #c6ae7d;
+
+    &:first-child {
+      background-color: #fff2e6;
+      border-radius: 8px 8px 0 0;
+    }
+
+    &:last-child {
+      border: 0;
+      margin-bottom: 0;
+    }
+  }
+}

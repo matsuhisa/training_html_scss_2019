@@ -1,0 +1,46 @@
+
+.place {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+
+  .place__infomation {
+    padding-right: 10px;
+  }
+
+  .place__name {
+    color: $place-name-color;
+    &>a{
+      color: $place-name-color;
+    }
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .place__area {
+    color: $area-name-coor;
+    margin-bottom: 10px;
+  }
+
+  .place__area-name {
+  }
+
+  .place__icon {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .place__lead {
+    line-height: 1.2;
+    color: $navy_1S;
+    margin-bottom: 10px;
+  }
+
+  .place__thumbnail {
+    max-width: 125px;
+  }
+}
+

@@ -1,0 +1,12 @@
+.ribbon {
+  @include ribbon($riboon-color: #ac8c4b);
+  margin-left: -10px;
+  margin-bottom: 10px;
+  &.-rank1 {
+    background-color: $orange;
+    &:after {
+      border-color: $orange;
+      border-right-color: $orange_2S;
+    }
+  }
+}
