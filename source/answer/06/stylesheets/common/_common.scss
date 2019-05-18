@@ -1,0 +1,8 @@
+@import "reset";
+@import "variable";
+
+body {
+  color: $base-text-color;
+  font-size: 14px;
+  line-height: 1.4;
+}

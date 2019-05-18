@@ -1,0 +1,152 @@
+@import "site-header";
+
+.breadcrumb {
+  width: 980px;
+  margin: 0 auto 20px;
+  font-size: 12px;
+
+  li {
+    color: $navy_1S;
+    display: inline-block;
+    margin-right: 5px;
+
+    a {
+      color: $navy_1S;
+    }
+
+    a:after {
+      border: 1px solid;
+      border-color: $navy_2S $navy_2S transparent transparent;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      margin: 0 7px;
+      transform: rotate(45deg);
+      width: 5px;
+    }
+  }
+}
+
+.content {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+
+  &__main {
+    flex: 1;
+    width: 660px;
+    margin-right: 20px;
+
+    &>h1 {
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 4px double $gold_2S;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__side {
+    flex: 1;
+    max-width: 300px;
+  }
+}
+
+.pagination {
+  display: table;
+  height: 30px;
+  margin: 30px auto 50px;
+}
+
+.pagination-pages {
+  display: table-cell;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+
+  &__page {
+    display: inline-block;
+    min-width: 20px;
+    padding: 7px 3px;
+    text-align: center;
+
+    &.current {
+      background-color: $navy_3S;
+      color: $white;
+    }
+  }
+
+  &__overflow {
+    display: inline-block;
+  }
+}
+
+.pagination-prev {
+  background-color: $navy_5S;
+  display: table-cell;
+  padding: 7px 3px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.pagination-next {
+  background-color: $navy_5S;
+  display: table-cell;
+  padding: 7px 3px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+
+footer {
+  background-color: $gold_5S;
+  padding: 30px 0;
+}
+
+.footer-services {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+
+  &__service {
+    flex: 1;
+    padding-right: 50px;
+    h4 {
+      color: $navy;
+      font-size: 18px;
+      padding: 0 0 5px;
+      border-bottom: 1px solid $gold_2S;
+      margin-bottom: 10px;
+    }
+    li {
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.footer-corporations {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+
+  &__corporation {
+    margin-bottom: 20px;
+
+    h4 {
+      color: $navy;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    li {
+      font-size: 12px;
+      display: inline-block;
+    }
+    li:after {
+      content: ' | ';
+      color: $navy_3S;
+    }
+  }
+}

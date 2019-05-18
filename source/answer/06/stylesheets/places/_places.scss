@@ -1,0 +1,241 @@
+.places {
+  .place {
+    display: flex;
+    margin-bottom: 40px;
+
+    .place-thumbnails {
+      flex: 1;
+      max-width: 235px;;
+
+      &__main {
+      }
+
+      &__thumbnails {
+        span {
+          display: inline-block;
+          width: 75px;
+          height: 75px;
+          margin-right: 5px;
+        }
+        span:nth-child(3) {
+          margin-right: 0;
+          position: relative;
+          img {
+            filter:brightness(0.5);
+          }
+        }
+      }
+      &__more {
+
+        color: $white;
+        display: inline-block;
+        font-size: 10px;
+        top: 20px;
+        left: 0;
+        position: absolute;
+        margin: auto;
+        width: 75px;
+        text-align: center;
+        line-height: 2;
+        .material-icons {
+          filter:brightness(0.9);
+          font-size: 28px;
+        }
+      }
+    }
+
+    .place-informaton {
+      flex: 1;
+      margin-left: 15px;
+
+      .place-name {
+        font-size: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .place-score {
+        margin-bottom: 10px;
+      }
+
+      .place-area {
+        display: inline-block;
+        font-size: 12px;
+      }
+
+      .place-genre {
+        display: inline-block;
+        font-size: 12px;
+      }
+
+      .place-lead {
+        font-size: 12px;
+        margin: 10px 0;
+      }
+    }
+
+    .place-review-informaton {
+      color: $navy_1S;
+      margin: 10px 0;
+
+      &__review {
+        display: inline-block;
+        margin-right: 20px;
+        .material-icons {
+          color: $gold_1S;
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+
+      &__cost {
+        display: inline-block;
+        .material-icons {
+          color: $gold_1S;
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .place-review {
+      background-color: $base-background-color;
+      padding: 15px;
+
+      &-title-container {
+        display: table;
+        margin-bottom: 10px;
+      }
+
+      &-title {
+        color: $navy_1S;
+        display: table-cell;
+        font-weight: bold;
+
+        &__good-title {
+          margin-bottom: 5px;
+          &>i {
+            color: $green;
+          }
+        }
+        &__warning-title {
+          margin-bottom: 5px;
+          &>i {
+            color: $navy_2S;
+          }
+        }
+        .material-icons {
+          font-size: 16px;
+          vertical-align: bottom;
+        }
+      }
+
+      &__type {
+        display: table-cell;
+        padding-right: 5px;
+        white-space: nowrap;
+
+        &>.m__on-the-day {
+          background-color: $pink_2S;
+          color: $pink;
+          display: inline-block;
+          text-align: center;
+          padding: 5px 7px;
+          vertical-align: middle;
+        }
+      }
+
+      &__body {
+        color: $navy_1S;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .place-review-contributor {
+      color: $navy_2S;
+      display: flex;
+      font-size: 12px;
+      &__profile {
+        display: flex;
+        img {
+          flex: 1;
+          max-width: 30px;
+        }
+        div {
+          flex: 1;
+          margin-left: 5px;
+          line-height: 1.2;
+        }
+        flex: 1;
+      }
+      &__date {
+        flex: 1;
+        text-align: right;
+
+        .material-icons {
+          font-size: 14px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.places-review-ranking {
+  margin-bottom: 40px;
+  &>h3 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid $gold_2S;
+    margin-bottom: 10px;
+  }
+
+  .places-review-ranking-places {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: $green_5S;
+
+    .places-review-ranking-place {
+      flex: 1;
+      width: 110px;
+      padding: 0 10px;
+
+      img {
+        width: 110px;
+      }
+      &__rank {
+        text-align: center;
+        margin-bottom: 3px;
+
+        span {
+          background-color: $navy_3S;
+          color: $white;
+          font-size: 12px;
+          padding: 3px 5px;
+          display: inline-block;
+
+          &.m--1 {
+            background-color: $gold_1S;
+          }
+          &.m--2 {
+            background-color: $navy_2S;
+          }
+          &.m--3 {
+            background-color: $gold_2S;
+          }
+        }
+      }
+
+      .place-name {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .place-score {
+        @include place-score(12px);
+      }
+    }
+  }
+}
