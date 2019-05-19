@@ -1,0 +1,46 @@
+.pagination {
+  display: table;
+  height: 30px;
+  margin: 30px auto 50px;
+
+  .pagination__prev {
+    background-color: $navy_5S;
+    display: table-cell;
+    padding: 7px 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+  }
+  
+  .pagination__next {
+    background-color: $navy_5S;
+    display: table-cell;
+    padding: 7px 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+  .pagination__pages {
+    display: table-cell;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .pagination__pages-page {
+    display: inline-block;
+    min-width: 20px;
+    padding: 7px 3px;
+    text-align: center;
+
+    &.-current {
+      background-color: $navy_3S;
+      color: $white;
+    }
+  }
+  
+  .pagination__pages-overflow {
+    display: inline-block;
+  }
+}

@@ -1,53 +1,7 @@
 @import "site-header";
 @import "content";
 @import "breadcrumb";
-
-.pagination {
-  display: table;
-  height: 30px;
-  margin: 30px auto 50px;
-}
-
-.pagination-pages {
-  display: table-cell;
-  padding: 0 20px;
-  text-align: center;
-  vertical-align: middle;
-
-  &__page {
-    display: inline-block;
-    min-width: 20px;
-    padding: 7px 3px;
-    text-align: center;
-
-    &.current {
-      background-color: $navy_3S;
-      color: $white;
-    }
-  }
-
-  &__overflow {
-    display: inline-block;
-  }
-}
-
-.pagination-prev {
-  background-color: $navy_5S;
-  display: table-cell;
-  padding: 7px 3px;
-  text-align: center;
-  vertical-align: middle;
-  width: 20px;
-}
-
-.pagination-next {
-  background-color: $navy_5S;
-  display: table-cell;
-  padding: 7px 3px;
-  text-align: center;
-  vertical-align: middle;
-  width: 20px;
-}
+@import "pagination";
 
 footer {
   background-color: $gold_5S;
