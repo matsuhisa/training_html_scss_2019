@@ -1,0 +1,22 @@
+.place-search-orders {
+  margin-bottom: 20px;
+
+  .place-search-orders__order {
+    background-color: $navy_5S;
+    border-radius: 12px;
+    color: $navy_3S;
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 16px;
+
+    &.-current {
+      background-color: $navy_3S;
+      color: $white;
+    }
+
+    .material-icons {
+      font-size: 16px;
+      vertical-align: top;
+    }
+  }
+}
