@@ -3,32 +3,6 @@
 @import "stylesheets/places/place";
 @import "stylesheets/places/places";
 @import "stylesheets/place-search-orders";
+@import "stylesheets/place-search-menu";
 @import "stylesheets/icon-count";
 @import "stylesheets/image-circle";
-
-.place-search-menu {
-  margin-bottom: 20px;
-  h3 {
-    border-bottom: 1px solid $gold_2S;
-    font-weight: bold;
-    margin-bottom: 10px;
-
-    .material-icons {
-      font-size: 16px;
-      vertical-align: top;
-      margin-right: 5px;
-    }
-  }
-
-  li {
-    border-bottom: 1px solid $navy_5S;
-    padding: 5px 10px;
-
-    &.current {
-      background-color: $gold_5S;
-    }
-  }
-}
-
-
-

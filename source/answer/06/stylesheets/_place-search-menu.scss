@@ -1,0 +1,24 @@
+.place-search-menu {
+  margin-bottom: 20px;
+
+  .place-search-menu__title {
+    border-bottom: 1px solid $gold_2S;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    &>.material-icons {
+      font-size: 16px;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+  }
+
+  .place-search-menu__item {
+    border-bottom: 1px solid $navy_5S;
+    padding: 5px 10px;
+
+    &.-current {
+      background-color: $gold_5S;
+    }
+  }
+}
