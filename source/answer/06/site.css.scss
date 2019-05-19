@@ -3,22 +3,8 @@
 @import "stylesheets/places/place";
 @import "stylesheets/places/places";
 @import "stylesheets/place-search-orders";
-
-.image-circle {
-  width: 30px;
-  height: 30px;
-  border: 2px solid $white;
-  border-radius: 50%;
-}
-
-.icon-count {
-  background-color: $gold_2S;
-  border-radius: 10px;
-  color: $white;
-  display: inline;
-  font-size: 10px;
-  padding: 2px 8px;
-}
+@import "stylesheets/icon-count";
+@import "stylesheets/image-circle";
 
 .place-search-menu {
   margin-bottom: 20px;
