@@ -1,0 +1,26 @@
+.breadcrumb {
+  width: 980px;
+  margin: 0 auto 20px;
+  font-size: 12px;
+
+  .breadcrumb__item {
+    color: $navy_1S;
+    display: inline-block;
+    margin-right: 5px;
+
+    &>a {
+      color: $navy_1S;
+
+      &:after {
+        border: 1px solid;
+        border-color: $navy_2S $navy_2S transparent transparent;
+        content: '';
+        display: inline-block;
+        height: 5px;
+        margin: 0 7px;
+        transform: rotate(45deg);
+        width: 5px;
+      }
+    }
+  }
+}
