@@ -4,20 +4,13 @@
   display: flex;
 
   .content__main {
-    flex: 1;
+    box-sizing: border-box;
     width: 660px;
     margin-right: 20px;
-
-    &>h1 {
-      font-size: 28px;
-      font-weight: bold;
-      border-bottom: 4px double $gold_2S;
-      margin-bottom: 10px;
-    }
   }
 
   .content__side {
-    flex: 1;
-    max-width: 300px;
+    box-sizing: border-box;
+    width: 300px;
   }
 }
