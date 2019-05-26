@@ -1,0 +1,27 @@
+.block {
+  li {
+  }
+}
+
+.block {
+  .block__element {
+    .block__element__element {
+    }
+  }
+}
+
+.block {
+  .block__element__element {
+  }
+}
+
+.block {
+  .another-block {
+  }
+}
+
+.block__element {
+}
+
+.-selected {
+}
