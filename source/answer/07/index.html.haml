@@ -69,14 +69,13 @@
                 %span.place-genre__name ホテル
 
               .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
-
               .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
               .place-review-informaton
@@ -138,12 +137,12 @@
               .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
 
               .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
               .place-review-informaton
@@ -204,12 +203,12 @@
               .place-lead 都会にいながら森のような庭園。チャペル挙式や神前式など、様々なスタイルでお二人らしい挙式が可能。
 
               .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
               .place-review-informaton
@@ -247,77 +246,74 @@
           %h3.places-review-ranking__title 東京都の料理満足度ランキング
           .places-review-ranking-places
             .places-review-ranking-place
-              .places-review-ranking-place__rank
-                %span.m--1 1
-              %img{ src: "./images/place05.jpg", width: "115" }
+              .places-review-ranking-place__rank.-rank-1 1
+              %img.places-review-ranking-place__image{ src: "./images/place05.jpg", width: "115" }
               %h3
-                %a.place-name{ href: "#" } Tower Tokyo
-              .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
-                .place-score__point 4.72
-
-            .places-review-ranking-place
-              .places-review-ranking-place__rank
-                %span.m--2 2
-              %img{ src: "./images/place04.jpg", width: "115" }
-              %h3
-                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
-              .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
-                .place-score__point 4.61
-
-            .places-review-ranking-place
-              .places-review-ranking-place__rank
-                %span.m--3 3
-              %img{ src: "./images/place01.jpg", width: "115" }
-              %h3
-                %a.place-name{ href: "#" } レストラン&ウェディング みんなのウェディングハウス ゴールデンハイム
-              .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                %a.places-review-ranking-place__name{ href: "#" } Tower Tokyo
+              .place-score.-font-size-12
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
             .places-review-ranking-place
-              .places-review-ranking-place__rank.m--4 4
-              %img{ src: "./images/place02.jpg", width: "115" }
+              .places-review-ranking-place__rank.-rank-2 2
+              %img.places-review-ranking-place__image{ src: "./images/place04.jpg", width: "115" }
               %h3
-                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
-              .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                %a.places-review-ranking-place__name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score.-font-size-12
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
             .places-review-ranking-place
-              .places-review-ranking-place__rank.m--5 5
-              %img{ src: "./images/place03.jpg", width: "115" }
+              .places-review-ranking-place__rank.-rank-3 3
+              %img.places-review-ranking-place__image{ src: "./images/place01.jpg", width: "115" }
               %h3
-                %a.place-name{ href: "#" } 国際みんなのウェディングホテル
-              .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
-                  .material-icons.place-score-stars__star-half<> star_half
-                .place-score__point 3.91
+                %a.places-review-ranking-place__name{ href: "#" } レストラン&ウェディング みんなのウェディングハウス ゴールデンハイム
+              .place-score.-font-size-12
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
+                .place-score__point 4.21
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank 4
+              %img.places-review-ranking-place__image{ src: "./images/place02.jpg", width: "115" }
+              %h3
+                %a.places-review-ranking-place__name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score.-font-size-12
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
+                .place-score__point 4.21
+
+            .places-review-ranking-place
+              .places-review-ranking-place__rank 5
+              %img.places-review-ranking-place__image{ src: "./images/place03.jpg", width: "115" }
+              %h3
+                %a.places-review-ranking-place__name{ href: "#" } 国際みんなのウェディングホテル
+              .place-score.-font-size-12
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
+                .place-score__point 4.21
 
         .places
           .place
@@ -341,12 +337,12 @@
                 %span.place-genre__name ホテル
 
               .place-score
-                .place-score-stars
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star<> star
-                  .material-icons.place-score-stars__star-half<> star_half
+                .place-score__stars
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star<> star
+                  .material-icons.place-score__star-half<> star_half
                 .place-score__point 4.21
 
               .place-review-informaton

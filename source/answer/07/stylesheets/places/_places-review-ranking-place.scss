@@ -3,38 +3,35 @@
   width: 110px;
   padding: 0 10px;
 
-  img {
+  .places-review-ranking-place__image {
     width: 110px;
   }
-  &__rank {
+
+  .places-review-ranking-place__rank {
+    background-color: $navy_3S;
+    color: $white;
+    font-size: 12px;
     text-align: center;
-    margin-bottom: 3px;
+    padding: 3px 5px;
+    margin: 0 auto 3px;
+    width: 1em;
 
-    span {
-      background-color: $navy_3S;
-      color: $white;
-      font-size: 12px;
-      padding: 3px 5px;
-      display: inline-block;
-
-      &.m--1 {
-        background-color: $gold_1S;
-      }
-      &.m--2 {
-        background-color: $navy_2S;
-      }
-      &.m--3 {
-        background-color: $gold_2S;
-      }
+    &.-rank-1 {
+      background-color: $gold_1S;
+    }
+    &.-rank-2 {
+      background-color: $navy_2S;
+    }
+    &.-rank-3 {
+      background-color: $gold_2S;
     }
   }
 
-  .place-name {
+  .places-review-ranking-place__name {
+    color: $place-name-color;
+    display: inline-block;
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 5px;
-  }
-
-  .place-score {
-    @include place-score(12px);
   }
 }

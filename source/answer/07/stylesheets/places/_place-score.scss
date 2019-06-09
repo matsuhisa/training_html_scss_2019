@@ -1,0 +1,6 @@
+.place-score {
+  @include place-score;
+  &.-font-size-12 {
+    @include place-score(12px);
+  }
+}

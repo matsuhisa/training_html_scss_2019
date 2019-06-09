@@ -1,0 +1,29 @@
+@mixin place-score($base-font: 16px) {
+  display: table;
+  font-size: $base-font;
+
+  .place-score__stars {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .place-score__star {
+    color: $pink;
+    display: inline-block;
+    font-size: $base-font + 2;
+  }
+
+  .place-score__star-half {
+    color: $navy_2S;
+    display: inline-block;
+    font-size: $base-font + 2;
+  }
+
+  .place-score__point {
+    color: $pink;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+

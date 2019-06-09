@@ -3,38 +3,6 @@
   font-weight: bold;
 }
 
-@mixin place-score($base-font: 16px) {
-  display: table;
-  font-size: $base-font;
-
-  &__point {
-    color: $pink;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  &-stars {
-    display: table-cell;
-    vertical-align: middle;
-
-    &__star {
-      color: $pink;
-      display: inline-block;
-      font-size: $base-font + 2;
-    }
-
-    &__star-half {
-      color: $navy_2S;
-      display: inline-block;
-      font-size: $base-font + 2;
-    }
-  }
-}
-
-.place-score {
-  @include place-score;
-}
-
 .place-area {
   color: $area-name-color;
 
