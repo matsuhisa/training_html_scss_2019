@@ -17,13 +17,12 @@
           %span.material-icons search
           %input{ type: "text", name: "q" , placeholder: "結婚式場を式場名・最寄駅から探す"}
         .site-header__site-member
-          %a{href: "#"}
-            %span.material-icons face
+          %a.site-header__site-member-link{href: "#"}
+            %span.material-icons.site-header__site-member-link-icons face
             ログイン
           %span
             |
-          %a{href: "#"}
-            新規会員登録
+          %a.site-header__site-member-link{href: "#"} 新規会員登録
 
     %ul.breadcrumb
       %li.breadcrumb__item
@@ -245,7 +244,7 @@
                     挙式日 2018年3月
 
         .places-review-ranking
-          %h3 東京都の料理満足度ランキング
+          %h3.places-review-ranking__title 東京都の料理満足度ランキング
           .places-review-ranking-places
             .places-review-ranking-place
               .places-review-ranking-place__rank
@@ -394,7 +393,7 @@
 
         .place-search-menu
           %h3.place-search-menu__title
-            %span.material-icons<> location_on
+            %span.material-icons.place-search-menu__title-icons<> location_on
             エリア
           %ul
             %li.place-search-menu__item.-current
@@ -442,7 +441,7 @@
 
         .place-search-menu
           %h3.place-search-menu__title
-            %span.material-icons<> location_city
+            %span.material-icons.place-search-menu__title-icons<> location_city
             会場ジャンル
           %ul
             %li.place-search-menu__item 専門式場

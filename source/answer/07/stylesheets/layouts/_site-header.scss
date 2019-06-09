@@ -39,13 +39,15 @@
   .site-header__site-member {
     flex: 2;
     text-align: right;
-    &>a {
-      color: $navy_1S;
-    }
-    .material-icons {
-      font-size: 16px;
-      vertical-align: middle;
-    }
+  }
+
+  .site-header__site-member-link {
+    color: $navy_1S;
+  }
+
+  .site-header__site-member-link-icons {
+    font-size: 16px;
+    vertical-align: middle;
   }
 }
 

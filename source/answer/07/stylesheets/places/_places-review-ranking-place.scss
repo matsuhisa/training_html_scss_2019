@@ -1,0 +1,40 @@
+.places-review-ranking-place {
+  flex: 1;
+  width: 110px;
+  padding: 0 10px;
+
+  img {
+    width: 110px;
+  }
+  &__rank {
+    text-align: center;
+    margin-bottom: 3px;
+
+    span {
+      background-color: $navy_3S;
+      color: $white;
+      font-size: 12px;
+      padding: 3px 5px;
+      display: inline-block;
+
+      &.m--1 {
+        background-color: $gold_1S;
+      }
+      &.m--2 {
+        background-color: $navy_2S;
+      }
+      &.m--3 {
+        background-color: $gold_2S;
+      }
+    }
+  }
+
+  .place-name {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .place-score {
+    @include place-score(12px);
+  }
+}
