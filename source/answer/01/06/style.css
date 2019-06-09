@@ -1,0 +1,5 @@
+div { color: red; }
+div { color: blue; }
+ 
+div.piyo.piyo { color: red; }
+div.piyo { color: blue; }
