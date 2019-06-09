@@ -1,0 +1,64 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
+    = stylesheet_link_tag 'site'
+    %title flex サンプル
+  %body
+
+  %h1 flex でよくあるレイアウトを実現する
+
+  %h2 2カラム
+
+  .flex-2-column
+    .flex-2-column__main
+      あいうえお
+    .flex-2-column__side
+      あいうえお
+      あいうえお
+      あいうえお
+
+  %hr
+
+  %h2 2カラム / 一部固定
+
+  .flex-2-fix-column
+    .flex-2-fix-column__main
+      あいうえお
+    .flex-2-fix-column__side
+      あいうえお
+      あいうえお
+      あいうえお
+  %hr
+
+  %h2 2段組 / 段組
+
+  .flex-mulch-column
+    .flex-mulch-column__item
+      あいうえお
+    .flex-mulch-column__item
+      あいうえお
+      あいうえお
+      あいうえお
+    .flex-mulch-column__item
+      あいうえお
+      あいうえお
+      あいうえお
+    .flex-mulch-column__item
+      あいうえお
+    .flex-mulch-column__item
+      あいうえお
+
+  %hr
+
+  %p{ style: "font-size: 16px; background-color: #58d7bf;" }
+    文章中に
+    %span.flex-inline
+      %span.flex-inline__text テキストと
+      %span.flex-inline__image
+        %img{ src: "./logo.png", width: "40", alt: "LINE"}
+    が出てきます
+
+
