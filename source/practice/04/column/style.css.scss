@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+
+  &__item-main {
+    flex: 1;
+    background-color: green;
+  }
+  
+  &__item-side {
+      flex: 1;
+      background-color: blue;
+  }
+}
+
+.piyo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.piyo__item {
+  width: calc((100% / 2) - ( 10px / 2));
+  background-color: #999999;
+  margin-bottom: 10px;
+}
+
+.piyo__item:nth-child(even) {
+  margin-left: 10px;
+}
+
+.navi {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: center;
+}
+
