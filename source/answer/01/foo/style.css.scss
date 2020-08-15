@@ -1,0 +1,25 @@
+%detail-layout {
+  font-size: 100%;
+
+  .title {
+    color: red;
+  }
+}
+
+.foo {
+  @extend %detail-layout;
+}
+
+.bar {
+  @extend %detail-layout;
+  .title {
+    color: black;
+  }
+}
+
+.bar {
+  @extend %detail-layout;
+  .title {
+    color: blue;
+  }
+}
