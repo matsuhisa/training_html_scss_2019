@@ -1,0 +1,37 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    = stylesheet_link_tag 'site'
+    %title grid
+  %body
+    %h1 grid
+
+    .sample
+      .items
+        .items__item あいうえお 1
+        .items__item あいうえお 2
+        .items__item
+          あいうえお 3
+          %br
+          あいうえお 3
+          %br
+          あいうえお 3
+        .items__item あいうえお 4
+        .items__item あいうえお 5
+
+      -# .items
+      -#   .items__item あいうえお 1
+      -#   .items__item あいうえお 2
+
+      .flex-items
+        .flex-items__item あいうえお 1
+        .flex-items__item あいうえお 2
+        .flex-items__item
+          あいうえお 3
+          %br
+          あいうえお 3
+          %br
+          あいうえお 3
+        .flex-items__item あいうえお 4
+        .flex-items__item あいうえお 5

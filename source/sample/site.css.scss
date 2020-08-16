@@ -1,0 +1,32 @@
+.sample {
+  background-color: #999999;
+
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-row-end: 2;
+  // grid-template-rows: repeat(2, minmax(10px, auto));
+  gap: 30px 10px;
+
+  .items__item {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    background-color: red;
+  }
+}
+
+.flex-items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .flex-items__item {
+    flex: 1 1 100px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: red;
+    border: 1px solid blue;
+  }
+}
