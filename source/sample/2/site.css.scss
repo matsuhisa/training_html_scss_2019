@@ -1,0 +1,24 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50%,auto));
+  grid-gap: 0;
+  gap: 0;
+}
+
+.card {
+  padding: 1em;
+
+  border-bottom: 1px solid blue;
+
+  &:nth-child(even) {
+    border-left: 1px solid red;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:nth-last-child(2) {
+    border-bottom: none;
+  }
+}
